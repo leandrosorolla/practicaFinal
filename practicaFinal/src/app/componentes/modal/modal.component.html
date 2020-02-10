@@ -1,0 +1,30 @@
+<br>
+<div class="col-12" style="margin-top: 60px;">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Nombre</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1"
+      [(ngModel)]="persona.nombre">
+  </div>
+  <!--------------------------------------------------------------------------------------->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Apellido</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" aria-describedby="basic-addon1"
+      [(ngModel)]="persona.apellido">
+  </div>
+  <!--------------------------------------------------------------------------------------->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">DNI</span>
+    </div>
+    <input type="text" class="form-control" placeholder="DNI" aria-label="0" aria-describedby="basic-addon1"
+      [(ngModel)]="persona.dni">
+  </div>
+  <!--------------------------------------------------------------------------------------->
+
+  <!--Boton guardar -->
+  <button type="button" class="btn btn-success" (click)="save()">Guardar</button>
+</div>
